@@ -1,5 +1,6 @@
 package com.example.demo.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import java.sql.Timestamp;
 import java.util.Date;
@@ -7,12 +8,17 @@ import java.util.Date;
 @Entity
 public class Flight extends AbstractEntity {
 
-
+    // TODO Actual row name is 'flightNumber'
     private String flightNumber;
+
     private String operatingAirlines;
+
     private String departureCity;
+
     private String arrivalCity;
+
     private Date dateOfDeparture;
+
     private Timestamp estimatedDepartureTime;
 
 

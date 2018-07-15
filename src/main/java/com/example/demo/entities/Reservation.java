@@ -1,13 +1,16 @@
 package com.example.demo.entities;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.OneToOne;
 
 @Entity
 public class Reservation extends AbstractEntity {
 
-
+    @Column(name = "checked_in")
     private Boolean checkedIn;
+
+    @Column(name = "number_of_bags")
     private int numberOfBags;
 
     // Foreign key

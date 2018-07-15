@@ -4,19 +4,20 @@
 <html>
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-    <title>Insert title here</title>
+    <title>FlightRes RegPage</title>
 </head>
 <body>
-<form action="registerUser" method="post">
+<form action="loginForm" method="post">
+    <h2>User Reservation: </h2>
     <pre>
     First Name: <input type="text" name="firstName"/>
     Last Name: <input type="text" name="lastName"/>
     User Name: <input type="text" name="email"/>
-    Password: <input type="text" name="password"/>
-    Password confirmation: <input type="text" name="confirmPassword"/>
+    Password: <input type="password" name="password"/>
+    Password confirmation: <input type="password" name="confirmPassword"/>
     <input type="submit" value="register">
     </pre>
 </form>
-
+${msg}
 </body>
 </html>
